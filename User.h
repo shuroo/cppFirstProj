@@ -3,7 +3,7 @@
 #include <string> 
 #include "Media.h"
 #include "Message.h"
-#include "Post.cpp"
+#include "Post.h"
 #include "USocial.h"
 using namespace std;
 
@@ -18,6 +18,7 @@ public:
     virtual void display();
     void setId(int id);
     User();
+    User(string userId);
     ~User();
     unsigned long getId();
     string getName();

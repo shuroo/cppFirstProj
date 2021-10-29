@@ -3,8 +3,10 @@
 class Media
 {
    int _id;
-   int mediaFile;
+   int mediaFile;   
 public:
+    Media(){};
+    ~Media(){};
     virtual void display();
     int getId();
     void setId(int id);

@@ -1,6 +1,6 @@
 
 #include<iostream>
-#include "Media.h"
+#include "Video.h"
 
 using namespace std;
 

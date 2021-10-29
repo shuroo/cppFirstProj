@@ -1,6 +1,6 @@
 
 #include<iostream>
-#include "Media.h"
+#include "Photo.h"
 
 using namespace std;
 // This class inherits from Base and implements fun()
