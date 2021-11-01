@@ -1,11 +1,12 @@
+#ifndef USER_H
 #define USER_H
 #include <iostream>
 #include <list>
 #include <string> 
-#include "Media.h"
-#include "Message.h"
 #include "Post.h"
+#include "Message.h"
 #include "USocial.h"
+
 using namespace std;
 
 class User
@@ -33,3 +34,5 @@ public:
     void viewReceivedMessages();
     
 };
+
+#endif

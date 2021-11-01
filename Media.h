@@ -1,5 +1,7 @@
+
+#ifndef MEDIA_H 
 #define MEDIA_H
-  
+//#include "User.h"  
 class Media
 {
    int _id;
@@ -10,6 +12,7 @@ public:
     virtual void display();
     int getId();
     void setId(int id);
-    Media(ofstream& mediaFile);
     void SetFile(int file); 
 };
+
+#endif

@@ -1,3 +1,5 @@
+#ifndef AUDIO_H
+#define AUDIO_H
 
 #include<iostream>
 #include "Media.h"
@@ -9,3 +11,5 @@ public:
     ~Audio(){};
     virtual void display();
 };
+
+#endif

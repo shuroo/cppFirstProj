@@ -1,3 +1,4 @@
+#ifndef MESSAGE_H
 #define MESSAGE_H
 #include <iostream>
 #include <string>
@@ -12,3 +13,5 @@ public:
     string getMessage(); 
     void displayMessage();
 };
+
+#endif

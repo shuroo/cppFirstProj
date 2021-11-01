@@ -3,22 +3,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-  USocial us; 
-    
+USocial::USocial(){};
+USocial::~USocial(){};
+ 
   User * USocial::registerUser(string userName){
 
-    static map<unsigned long,User *> users = us.users;
-    unsigned long usrId = users.size();
+    unsigned long usrId = this->users.size();
     User * usr = new User(usrId,userName);
     users.insert ( {usrId,usr} );
-    std::cout << "Added user:" << users.size() << 'of id:\n' << usrId;
-
+    std::cout << "Added user:" << users.size() << " of id:\n " << usrId;
+    return usr;
   };
 
 
   void  USocial::removeUser(User * usr){
-    map<unsigned long,User *> usersMap = us.users;
+    map<unsigned long,User *> usersMap = this->users;
     map<unsigned long,User *>::iterator itr = usersMap.begin();
     while (itr != usersMap.end()) {
       // compare map's value (user) of its name to the given.
@@ -34,22 +33,23 @@ using namespace std;
   };
 
   User * USocial::getUserById(unsigned long userId){
-
-    static map<unsigned long,User *> usersMap = us.users;
+    
+    User * usr = NULL;
+    static map<unsigned long,User *> usersMap = this->users;
     map<unsigned long,User *>::iterator itr = usersMap.begin();
     while (itr != usersMap.end()) {
         if ((*itr).second->getId() == userId) {  
             /// should we also destruct the User? delete usersMap[itr]) 
             
             std::cout << "Found user of id:" <<userId << endl ;
-            return (*itr).second;
+            usr = (*itr).second;
+            return usr;
                     } else {
                     ++itr;
                     }
 
         }
         std::cout << "Failed to find user of id:" <<userId << endl ;
+        return usr;
   };
-
-      //todo:   User * getUserById(unsigned long id);
 

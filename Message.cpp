@@ -17,15 +17,15 @@ Message::Message(const string & message){
             this->_text = message;
         };
         
-    int main() {
+    // int main() {
     
-    Message msg(string ("abc"));
+    // Message msg(string ("abc"));
 
-    // set line length
-    // Message.setLength(6.0); 
-    cout << "Length of line : " << endl;
+    // // set line length
+    // // Message.setLength(6.0); 
+    // cout << "Length of line : " << endl;
     
-    return 0;
-    };
+    // return 0;
+    // };
 
  

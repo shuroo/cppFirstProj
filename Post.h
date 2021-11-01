@@ -1,6 +1,9 @@
+#ifndef POST_H
+#define POST_H
 #include <iostream>
 #include <string>
 #include "Media.h"
+
 using namespace std;
 class Post{
     
@@ -18,3 +21,5 @@ class Post{
     void publish();
  
 };
+
+#endif

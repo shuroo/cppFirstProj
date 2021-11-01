@@ -1,13 +1,16 @@
 
+#ifndef USOCIAL_H
 #define USOCIAL_H
+
 #include <algorithm>
 #include <iostream>
 #include <list>
 #include <map>
 using namespace std;
+class User;
 class USocial{
     private:
-        static map<unsigned long,User *> users;
+        map<unsigned long,User *> users;
     public:
         USocial();
         ~USocial();
@@ -18,3 +21,5 @@ class USocial{
 
        // map<unsigned long,User *> getUsers(){ return users; };
 }; 
+
+#endif
