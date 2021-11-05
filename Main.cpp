@@ -8,8 +8,8 @@ using namespace std;
 int main()
 {
    USocial us;
-    User* u1 = us.registerUser("Liron");
-    User* u2 = us.registerUser("Yahav");
+   //  User* u1 = us.registerUser("Liron");
+   //  User* u2 = us.registerUser("Yahav");
     // User* u3 = us.registerUser("Shachaf");
     // User* u4 = us.registerUser("Tsur", true);
     // User* u5 = us.registerUser("Elit");
